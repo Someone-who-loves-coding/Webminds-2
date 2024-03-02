@@ -1,0 +1,50 @@
+body{
+    background-image: url("../assets/Login.jpeg");
+    background-size: 100%;
+
+}
+
+.Navbar{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin-top: 47px;
+    margin-left: 55px;
+}
+
+.Navbar div:nth-child(1){
+    border: 1px solid white;
+    backdrop-filter: blur(8px);
+    color:white;
+    border-radius: 37.78px;
+    width: 55.21px;
+}
+
+.Navbar div{
+    border: 1px solid white;
+    backdrop-filter: blur(8px);
+    color:white;
+    border-radius: 60px;
+    width: 154.6px;
+    text-align: center;
+    padding-top: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.Navbar div:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    transform: scale(110%);
+}
+
+.Form{
+    width: 539px;
+    height: 728px;
+    background: rgba(0,0,0.5,0.5);
+    box-shadow:1px 8px 5px #FFFFFF;
+    border-radius: 0 0 25px 25px;
+    margin: auto;
+    margin-top: 40px;
+}
