@@ -1,6 +1,7 @@
 body{
     background-image: url("../assets/Login.jpeg");
     background-size: 100%;
+    color:white;
 
 }
 
@@ -12,7 +13,22 @@ body{
     margin-left: 55px;
 }
 
-.Navbar div:nth-child(1){
+
+.Navbar a div{
+    border: 1px solid white;
+    backdrop-filter: blur(8px);
+    color:white;
+    text-decoration: none;
+    border-radius: 60px;
+    width: 154.6px;
+    height: 40px;
+    text-align: center;
+    padding-top: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.Navbar div{
     border: 1px solid white;
     backdrop-filter: blur(8px);
     color:white;
@@ -20,19 +36,8 @@ body{
     width: 55.21px;
 }
 
-.Navbar div{
-    border: 1px solid white;
-    backdrop-filter: blur(8px);
-    color:white;
-    border-radius: 60px;
-    width: 154.6px;
-    text-align: center;
-    padding-top: 18px;
-    margin: 0 5px;
-    cursor: pointer;
-}
 
-.Navbar div:hover{
+.Navbar a div:hover{
     background-color: white;
     color: black;
     transition: 0.5s;
@@ -47,4 +52,25 @@ body{
     border-radius: 0 0 25px 25px;
     margin: auto;
     margin-top: 40px;
+}
+
+.ele.active{
+    transform: scale(90.91%);
+}
+.ele.active:hover{
+    transform:scale(100%);
+    transition: 0.5s;
+}
+
+a {
+    all: unset;
+}
+
+.Form{
+    font-family: Poppins;
+}
+
+form div p{
+    position: inherit;
+    margin-top: 195.54px;
 }

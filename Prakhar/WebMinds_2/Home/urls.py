@@ -4,5 +4,9 @@ from Home import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.Landing)
+    path('',views.Landing),
+    path('Home/',views.Home,name='Home'),
+    path('Contact Us/',views.Contact,name='Contact Us'),
+    path('Discuss/',views.Discuss,name='Discuss'),
+    path('Catalog/',views.Courses,name='Catalog')
 ]

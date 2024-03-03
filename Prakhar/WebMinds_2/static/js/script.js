@@ -1,4 +1,7 @@
-const divo = document.querySelector('div');
-console.log(divo);
+const divo = document.querySelectorAll('.ele');
 
-divo.addEventListener('click' , () => divo.classList.add('active'));
+divo.forEach(function (elem) {
+    elem.addEventListener('mousedown', () => {
+        elem.classList.toggle('active')
+    });
+});

@@ -4,24 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Education | {% block title %} Login {% endblock %}</title>
+    <link rel="icon" href="{% static 'assets/favicon.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}"">
 </head>
 <body>
     <div class="Navbar">
         <div></div>
-        <div>Home</div>
-        <div>Contact</div>
-        <div>Discussion</div>
-        <div>Courses</div>
-        <div>Courses</div>
+        <a href="{% url 'Home' %}"><div class="ele">Home</div></a>
+        <a href="{% url 'Contact Us' %}"><div class="ele">Contact</div></a>
+        <a href="{% url 'Discuss' %}"><div class="ele">Discussion</div></a>
+        <a href="{% url 'Catalog' %}"><div class="ele">Courses</div></a>
     </div>
+    {% block content %}
     <div class="Form">
-
+        <div>
+            <p>Welcome to <b>Education</b></p>
+        </div>
         <form action="POST">
             
         </form>
     </div>
+    {% endblock %}
+
     <script src="{% static 'js/script.js' %}" async defer></script>
 </body>
 </html>
