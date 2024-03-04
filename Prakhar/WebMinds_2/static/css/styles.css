@@ -2,7 +2,6 @@ body{
     background-image: url("../assets/Login.jpeg");
     background-size: 100%;
     color:white;
-
 }
 
 .Navbar{
@@ -52,10 +51,12 @@ body{
     border-radius: 0 0 25px 25px;
     margin: auto;
     margin-top: 40px;
+    font-family: Poppins;
+    padding: 20px;
 }
 
 .ele.active{
-    transform: scale(90.91%);
+    animation: reverse;
 }
 .ele.active:hover{
     transform:scale(100%);
@@ -66,11 +67,39 @@ a {
     all: unset;
 }
 
-.Form{
-    font-family: Poppins;
+h2{
+    padding-top: 30px;
 }
 
-form div p{
-    position: inherit;
-    margin-top: 195.54px;
+.input{
+    border-radius: 9px;
+    background: #232222;
+    color: white;
+    width:auto;
+    width: 451px;
+    height: 55.11px;
+    border: 1px;
+    border-color: white;
+}
+
+.fl{
+    display: flex;
+}
+
+.input.submit {
+    background-color: #0F3941; 
+    font-size: medium; 
+    font-weight: 1000;
+    border-radius: 9px;
+    color: white;
+    width:auto;
+    width: 451px;
+    height: 55.11px;
+    border: 1px;
+    border-color: white;
+}
+
+.input.submit.active{
+    transform: scale(90%);
+    transition: 0.25s;
 }

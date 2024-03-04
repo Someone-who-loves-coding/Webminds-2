@@ -18,11 +18,37 @@
     </div>
     {% block content %}
     <div class="Form">
-        <div>
+        <div style="padding-top: 22.54px;">
             <p>Welcome to <b>Education</b></p>
+            <p style="font-family: Poppins;
+            font-size: 55px;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 27.16;
+            ">Sign Up</p>
         </div>
-        <form action="POST">
-            
+        
+        <form action="POST" style="align-items: center;">
+            <br><br>
+            <div style="padding: 44px; padding-top: 0;">
+                <label for="email">Email</label><br><br>
+                <input class="input" type="email" name="email" placeholder="Email"><br><br>
+                <div class="fl">
+                    <div style="padding-right: 20px;">
+                    <label for="username">Username</label><br>
+                    <input class="input" style="width: 205px;" type="text" name="username" placeholder="Username">
+                    </div>
+                    <div>
+                    <label for="Contact">Contact</label><br>
+                    <input class="input" style="width: 224px;" type="text" name="Contact" placeholder="Contact">
+                    </div>
+                </div>
+                <label for="password">Password</label><br><br>
+                <input class="input" type="text" name="username" placeholder="Password">
+                <div><br><br>
+                    <input type="submit" class="input submit" value="Sign Up">
+                </div>
+            </div>
         </form>
     </div>
     {% endblock %}

@@ -5,3 +5,7 @@ divo.forEach(function (elem) {
         elem.classList.toggle('active')
     });
 });
+
+document.querySelector('.input.submit').addEventListener('click', () => {
+    document.querySelector('.input.submit').toggle('active')
+});
